@@ -11,6 +11,7 @@ menuconfig INPUT_TOUCHSCREEN
 
 if INPUT_TOUCHSCREEN
 
+source "drivers/input/touchscreen/cst_ts/Kconfig"
 source drivers/input/touchscreen/adaptive-ts/Kconfig
 
 source drivers/input/touchscreen/synaptics_dsx/Kconfig
