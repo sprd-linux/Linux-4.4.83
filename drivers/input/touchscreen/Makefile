@@ -97,3 +97,4 @@ obj-$(CONFIG_TOUCHSCREEN_GOODIX5) += goodix5/
 obj-$(CONFIG_TOUCHSCREEN_GT1X_TS)    += gt1x_ts/
 obj-$(CONFIG_TOUCHSCREEN_MSG2XXX_TS) += msg2xxx_ts/
 obj-$(CONFIG_ZTE_TOUCHSCREEN) += zte_touchscreen/
+obj-$(CONFIG_TOUCHSCREEN_CST0XX) += cst_ts/
