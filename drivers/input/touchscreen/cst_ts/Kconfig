@@ -1,0 +1,5 @@
+config TOUCHSCREEN_CST0XX
+    tristate "CST0XX Touchscreen driver"
+    depends on I2C && OF
+    help
+      Say Y here to enable CST0XX touchscreen support.
