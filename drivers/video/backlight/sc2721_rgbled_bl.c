@@ -50,9 +50,9 @@ static void sprd_rgb_led_off(void)
 	regmap_write(sprd_rgb_backlight_handle,
 		BLTC_CTRL, 0x0);
 	regmap_update_bits(sprd_rgb_backlight_handle,
-		ANA_REG_GLB_RTC_CLK_EN0, BIT_RTC_BLTC_EN, ~BIT_RTC_BLTC_EN);
+		ANA_REG_GLB_RTC_CLK_EN0, BIT_RTC_BLTC_EN, ~(u32)BIT_RTC_BLTC_EN);
 	regmap_update_bits(sprd_rgb_backlight_handle,
-		ANA_REG_GLB_MODULE_EN0, BIT_BLTC_EN, ~BIT_BLTC_EN);
+		ANA_REG_GLB_MODULE_EN0, BIT_BLTC_EN, ~(u32)BIT_BLTC_EN);
 }
 
 static void sprd_rgb_led_set_brightness(u32 level)
@@ -206,3 +206,4 @@ module_platform_driver(rgbled_backlight_driver);
 MODULE_DESCRIPTION("Spreadtrum PMIC RGBLED backlight Driver");
 MODULE_AUTHOR("albert.zhang@spreadtrum.com");
 MODULE_LICENSE("GPL");
+
